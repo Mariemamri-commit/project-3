@@ -2,75 +2,73 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=, initial-scale=1.0">
-    <title>my potfolio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <h1> MARYEM AMRI  </h1>
-    <!-- this is a comment -->
- <header>
+    <header>
+        <h1 class="title">MARYEM AMRI</h1>
         <div class="navbar">
             <a href="#home">Home</a>
             <a href="#services">Services</a>
             <a href="#information">Information</a>
             <a href="#contact">Contact</a>
         </div>
-    
-        <div class="content">
-            <h1 id="home">Home</h1>
-            <p>Welcome to the home section.</p>
-            <a href="#home">Home</a>
-            <a href="#services">Services</a>
-            <a href="#information">Information</a>
-            <a href="#contact">Contact</a>
-            
-            <h1 id="services">Services</h1>
-           <div class="service">
-           <p>Click the button below to reveal more about us.</p>
-            <button id="toggleInfo">Show More</button>
-            <div id="moreInfo" class="hidden">
-                <p>We are passionate about creating amazing web experiences. we specialize in front-end development using modern technologies.</p>
-                <p>Our services include web design, development, and optimization.</p>
-                <p>Designing intuitive and engaging user interfaces with a focus on user experience and interaction design.</p>         
-             </div>
-            <h1 id="contact">Contact</h1>
-            <p>Get in touch with us through the contact form below.</p>
-            <!-- Correct img declaration  -->
-<img src="https://www.pexels.com/fr-fr/photo/ordinateur-portable-noir-et-gris-546819/" > 
+    </header>
 
+    <section id="home" class="section">
+        <h2 class="section-title">Home</h2>
+        <p>Welcome to the home section.</p>
+    </section>
+
+    <section id="services" class="section">
+        <h2 class="section-title">Services</h2>
+        <div class="service">
+            <p>Click the button below to reveal more about us.</p>
+            <button id="toggleInfo" class="button">Show More</button>
+            <div id="moreInfo" class="hidden">
+                <p>We are passionate about creating amazing web experiences. We specialize in front-end development using modern technologies.</p>
+                <p>Our services include web design, development, and optimization.</p>
+                <p>Designing intuitive and engaging user interfaces with a focus on user experience and interaction design.</p>
             </div>
-           <h1>Information</h1>
-                <ul>
-                    <li><strong>Full Name:</strong> maryem amri</li>
-                    <li><strong>Date of Birth:</strong> 6/07/2008</li>
-                    <li><strong>Location:</strong> MANOUBA DHOUAR HICHER</li>
-                    <li><strong>Email:</strong>amrimaryem023@gmail.com </li>
-                    <li><strong>Phone:</strong> 96831697</li>
-                </ul>
-            
         </div>
-            <h1 id="contact">Contact</h1>
-            <p>Get in touch with us.</p>
-            <form>
-                <label>Name:</label>
-                <input type="text" name="first name" placeholder="Type your name here" />
-                <br />
-          
-                <label>Number:</label>
-                <input type="number" name="number" value="23123456" />
-                <br />
-          
-                <label>Birth Date:</label>
-                <input type="date" name="birthday" />
-                <br />
-          
-                <label>Password:</label>
-                <input type="password" name="password" />
-                <br />
-          
-                <input type="submit" value="Submit" />
-              </form>
-        </div>
- </header>  
+    </section>
+
+    <section id="information" class="section">
+        <h2 class="section-title">Information</h2>
+        <ul>
+            <li><strong>Full Name:</strong> Maryem Amri</li>
+            <li><strong>Date of Birth:</strong> 6/07/2008</li>
+            <li><strong>Location:</strong> Manouba Dhouar Hicher</li>
+            <li><strong>Email:</strong> amrimaryem023@gmail.com</li>
+            <li><strong>Phone:</strong> 96831697</li>
+        </ul>
+    </section>
+
+    <section id="contact" class="section">
+        <h2 class="section-title">Contact</h2>
+        <p>Get in touch with us through the contact form below.</p>
+        <form class="contact-form">
+            <label>Name:</label>
+            <input type="text" name="first name" placeholder="Type your name here" />
+            <br />
+
+            <label>Number:</label>
+            <input type="number" name="number" value="23123456" />
+            <br />
+
+            <label>Birth Date:</label>
+            <input type="date" name="birthday" />
+            <br />
+
+            <label>Password:</label>
+            <input type="password" name="password" />
+            <br />
+
+            <input type="submit" value="Submit" class="button" />
+        </form>
+    </section>
 </body>
 </html>
